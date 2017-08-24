@@ -74,7 +74,7 @@ export class CountoDirective {
         }
 
         var intermediate  = _this._countFrom;
-        var increment     = Math.abs(_this._countTo - _this._countFrom) / ((_this._duration * 1000) / _this._step);
+        var increment     = 1;
 
         _this.countoChange.emit(intermediate);
 
